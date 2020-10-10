@@ -1,6 +1,6 @@
 # UI Clone Projects
 
-![GitHub](https://img.shields.io/github/license/alissonraphael/ui_clone_projects)
+![GitHub](https://img.shields.io/github/license/AlissonRaphael/ui_clone_projects)
 
 This repository contains UI clones of various webapps for student purposes.
 
