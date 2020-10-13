@@ -36,4 +36,8 @@ export const Label = styled.span`
   border-radius: 2px;
   display: inline-block;
   background-color: ${props => props.color};
+
+  & + span {
+    margin-left: 4px;
+  }
 `
