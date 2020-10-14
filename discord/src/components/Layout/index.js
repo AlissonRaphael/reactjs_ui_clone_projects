@@ -5,6 +5,7 @@ import { Grid } from './style'
 import ServerList from '../ServerList'
 import ServerName from '../ServerName'
 import ChannelInfo from '../ChannelInfo'
+import ChannelList from '../ChannelList'
 
 export default function Layout(){
   return (
@@ -12,6 +13,7 @@ export default function Layout(){
       <ServerList/>
       <ServerName/>
       <ChannelInfo/>
+      <ChannelList/>
     </Grid>
   )
 }
