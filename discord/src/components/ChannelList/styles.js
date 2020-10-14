@@ -12,9 +12,23 @@ export const Container = styled.div`
 `
 
 export const Category = styled.div`
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 6px;
+
+  span {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--gray);
+  }
 `
 
 export const AddCateogoryIcon = styled(MdAdd)`
-
+  width: 21px;
+  height: 21px;
+  color: var(--symbol);
+  cursor: pointer;
 `
