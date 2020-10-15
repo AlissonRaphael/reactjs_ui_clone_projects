@@ -6,6 +6,7 @@ import ServerList from '../ServerList'
 import ServerName from '../ServerName'
 import ChannelInfo from '../ChannelInfo'
 import ChannelList from '../ChannelList'
+import UserInfo from '../UserInfo'
 
 export default function Layout(){
   return (
@@ -14,6 +15,7 @@ export default function Layout(){
       <ServerName/>
       <ChannelInfo/>
       <ChannelList/>
+      <UserInfo/>
     </Grid>
   )
 }

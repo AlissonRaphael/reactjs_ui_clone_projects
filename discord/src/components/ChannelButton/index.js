@@ -10,7 +10,7 @@ export default function ChannelButton({ channelName, selected }){
         <span>{channelName}</span>
       </div>
 
-      <div>
+      <div className="options">
         <InviteIcon />
         <SettingsIcon />
       </div>

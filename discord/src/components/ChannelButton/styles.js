@@ -26,14 +26,21 @@ export const Container = styled.div`
     color: var(--senary);
   }
 
+  div.options {
+    display: none;
+  }
+
   &:hover, &.active {
     background-color: var(--quinary);
+
+    div.options {
+      display: flex;
+    }
 
     div span {
       color: var(--white);
     }
   }
-
 `
 
 export const HashtagIcon = styled(HiHashtag)`

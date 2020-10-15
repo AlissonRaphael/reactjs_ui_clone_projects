@@ -12,7 +12,7 @@ export default function ChannelList(){
         <AddCateogoryIcon />
       </Category>
 
-      <ChannelButton channelName='chat-livre'/>
+      <ChannelButton channelName='chat-livre' selected/>
       <ChannelButton channelName='amoung-us'/>
       <ChannelButton channelName='brasileirão-bolão'/>
       <ChannelButton channelName='faculdade'/>
