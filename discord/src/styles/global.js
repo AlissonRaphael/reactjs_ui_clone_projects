@@ -26,6 +26,7 @@ export default createGlobalStyle`
     margin: 0px;
     padding: 0px;
     outline: 0px;
+    border: none;
     box-sizing: border-box;
   }
 
