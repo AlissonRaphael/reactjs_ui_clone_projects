@@ -17,7 +17,7 @@ function UserRow({ nickname, isBot, isOn, color }){
 export default function UserList(){
   return (
     <Container>
-      <Role>Disponível - 2</Role>
+      <Role>Disponível—2</Role>
       <UserRow nickname="Alisson Oliveira" color="steelBlue" isOn/>
       <UserRow nickname="Talessa Marina" color="hotPink" isOn/>
 

@@ -69,7 +69,7 @@ export const UserIcon = styled(FiUsers)`
 `
 
 export const Form = styled.form`
-  width: ${(props) => props.expand ? '200px' : '150px'};
+  width: ${(props) => props.expand ? '230px' : '150px'};
   padding: 3px 5px;
   margin-left: 14px;
   background-color: var(--tertiary);

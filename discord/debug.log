@@ -1,0 +1,2 @@
+[1016/170612.694:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\Alisson\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\7e7523f4-4b3f-4923-b170-ba412b43707b: O sistema não pode encontrar o caminho especificado. (0x3)
+[1016/171202.963:ERROR:directory_reader_win.cc(43)] FindFirstFile: O sistema não pode encontrar o caminho especificado. (0x3)

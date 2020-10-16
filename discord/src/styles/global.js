@@ -38,6 +38,7 @@ export default createGlobalStyle`
   body {
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.6px;
     -webkit-font-smoothing: antialiased !important;
     background-color: tomato;
     color: #333;

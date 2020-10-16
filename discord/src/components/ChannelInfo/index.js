@@ -15,6 +15,8 @@ import {
   HelpIcon
 } from './styles'
 
+import SearchOptions from '../SearchOptions'
+
 export default function ChannelInfo(){
   const [input, setInput] = useState('')
   const [expand, setExpand] = useState(false)
@@ -51,6 +53,8 @@ export default function ChannelInfo(){
             onChange={(event) => setInput(event.target.value)}
             value={input}
           />
+          {expand && <SearchOptions/>}
+
           <Button>
             <SearchIcon/>
           </Button>
