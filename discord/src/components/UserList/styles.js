@@ -26,6 +26,7 @@ export const Container = styled.div`
     background-color: var(--secondary);
   }
 `
+
 export const Role = styled.div`
   margin-top: 20px;
   text-transform: uppercase;
@@ -47,11 +48,16 @@ export const User = styled.div`
 
   &:hover {
     background-color: rgba(255,255,255,0.1);
+    
+    p {
+      opacity: 1;
+    }
   }
 
-  strong {
+  p {
     margin-left: 13px;
-    font-weight: 500;
+    font-size: 14px;
+    font-weight: 100;
     color: var(--white);
     opacity: 0.7;
     white-space: nowrap;
@@ -68,17 +74,5 @@ export const User = styled.div`
     text-transform: uppercase;
     font-weight: bold;
     font-size: 11px;
-  }
-`
-
-export const Avatar = styled.div`
-  flex-shrink: 0;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background-color: var(--primary);
-
-  &.bot {
-    background-color: var(--mention-detail);
   }
 `
