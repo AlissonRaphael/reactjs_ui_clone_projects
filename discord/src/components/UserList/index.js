@@ -15,11 +15,11 @@ function UserRow({ nickname, isBot }){
 export default function UserList(){
   return (
     <Container>
-      <Role>Disponível - 1</Role>
+      <Role>Disponível - 2</Role>
       <UserRow nickname="Alisson Oliveira" />
       <UserRow nickname="Talessa Marina" />
 
-      <Role>Offline - 1</Role>
+      <Role>Offline</Role>
       <UserRow nickname="MizaChannel" />
       <UserRow nickname="C3PO" isBot/>
       <UserRow nickname="Fulano" />
