@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { FiAtSign } from 'react-icons/fi'
 
 export const Container = styled.div`
   grid-area: e;
@@ -30,39 +29,4 @@ export const Messages = styled.div`
   ::-webkit-scrollbar-track {
     background-color: var(--secondary);
   }
-`
-
-export const InputWrapper = styled.div`
-  width: 100%;
-  padding: 0px 16px;
-
-  position: relative;
-
-  svg {
-    position: absolute;
-    top: 11px;
-    left: 30px;
-    transition: 180ms ease-in-out;
-  }
-`
-
-export const Input = styled.input`
-  width: 100%;
-  height: 44px;
-  padding: 0px 10px 0px 57px;
-
-  border-radius: 7px;
-  color: var(--white);
-  background-color: var(--chat-input);
-
-  &::placeholder {
-    color: var(--gray);
-  }
-`
-
-export const InputIcon = styled(FiAtSign)`
-  width: 24px;
-  height: 24px;
-  color: var(--gray);
-
 `
