@@ -1,9 +1,10 @@
 import React from 'react'
 
+import Avatar from '../Avatar'
+
 import {
   Container,
   Profile,
-  Avatar,
   UserData,
   Icons,
   MicIcon,
@@ -14,7 +15,7 @@ export default function UserInfo(){
   return (
     <Container>
       <Profile>
-        <Avatar/>
+        <Avatar color="steelBlue" isOn/>
         <UserData>
           <strong>Alisson Oliveira</strong>
           <span>#4091</span>

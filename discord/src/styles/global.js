@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
 
   :root {
     --primary: #36393f;
@@ -20,6 +20,7 @@ export default createGlobalStyle`
     --mention-detail: #f9a839;
     --mention-message: #413f3f;
     --link: #5d80d6;
+    --on: #3FA978;
   }
 
   * {
