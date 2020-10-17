@@ -24,10 +24,14 @@ export const Form = styled.form`
   align-items: center;
   justify-content: space-between;
 
+  div {
+    display: flex;
+  }
 `
 
 export const Input = styled.input`
   width: 100%;
+  font-size: 14px;
   padding: 0px 10px;
   color: var(--white);
   background-color: var(--chat-input);
@@ -38,6 +42,9 @@ export const Input = styled.input`
 `
 
 export const Button = styled.button`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
   color: var(--white);
   opacity: 0.7;

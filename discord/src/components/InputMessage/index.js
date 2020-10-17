@@ -6,9 +6,11 @@ export default function InputMessage(){
   return (
     <Container>
       <Form>
-        <Button>
-          <AddIcon/>
-        </Button>
+        <div>
+          <Button>
+            <AddIcon/>
+          </Button>
+        </div>
 
         <Input type="text" placeholder="Conversar em chat-livre"/>
 
