@@ -5,8 +5,8 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+  width: ${(props) => props.size ? (props.size + 'px') : '32px' };
+  height: ${(props) => props.size ? (props.size + 'px') : '32px' };
   border-radius: 50%;
   background-color: ${(props) => props.color ? props.color : 'var(--primary)' };
 
