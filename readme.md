@@ -2,12 +2,20 @@
 
 ![GitHub](https://img.shields.io/github/license/AlissonRaphael/ui_clone_projects)
 
-This repository contains UI clones of various webapps for student purposes.
+This repository contains UI clones of various webapps for student purposes. Using several React ecosystem libraries, such as styled-components, react-icons, react-router.
 
 ## Contents
 - [Installation](#installation)
+- [Projects](#projects)
 - [Contact](#contact)
 - [License](#license)
+
+## Projects
+### Discord
+
+Discord é uma plataforma de chat em grupo construída originalmente para jogadores, mas que desde então se tornou uma plataforma de uso geral para todos os tipos de comunidades.
+
+![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/discord/discord.gif)
 
 ## Installation
 Only requires a stable version of Node.js with node package manager (NPM).
