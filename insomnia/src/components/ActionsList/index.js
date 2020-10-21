@@ -8,7 +8,7 @@ export default function ActionsList(){
 
       <FirstSection>
         <Button>
-          <span>WorkspaceName</span>
+          <span>Test</span>
           <MoreIcon/>
         </Button>
       </FirstSection>
