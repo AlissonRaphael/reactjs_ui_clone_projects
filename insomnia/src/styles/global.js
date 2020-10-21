@@ -12,6 +12,7 @@ export default createGlobalStyle`
     --text-color-to-dark: #545452;
     --text-color-to-light: #666;
     --hoover-color: #363734;
+    --border: #474845;
     --success: #75ba24;
     --failed: #ec8702;
     --error: #e15251;
@@ -43,6 +44,7 @@ export default createGlobalStyle`
 
   body {
     background-color: var(--background);
+    font-family: Roboto, sans-serif;
   }
 
 `
