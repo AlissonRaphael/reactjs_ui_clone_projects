@@ -5,15 +5,14 @@ import { MdArrowDropDown } from 'react-icons/md'
 export const Container = styled.div`
   display: grid;
   grid-template-rows: 47px 1fr;
-
-  border-right: 1px solid var(--border);
 `
 
 export const FirstSection = styled.section`
   display: flex;
 
   background-color: var(--secondary-header);
-  border-bottom: 1px solid var(--border);
+  border: 1px solid var(--white-border);
+  border-left: none;
 `
 
 export const Button = styled.button`
@@ -49,5 +48,5 @@ export const Input = styled.input`
 
 
 export const SecondSection = styled.section`
-
+  border-right: 1px solid var(--border);
 `

@@ -9,7 +9,6 @@ export const Container = styled.div`
   grid-template-rows: 47px 1fr;
 
   background-color: var(--background-list);
-  border-right: 1px solid var(--border);
 `
 
 export const FirstSection = styled.div`
@@ -21,11 +20,14 @@ export const FirstSection = styled.div`
   align-items: center;
   max-width: 100%;
   color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-right: 1px solid var(--white-border);
 `
 
 export const SecondSection = styled.div`
   display: flex;
   flex-direction: column;
+  border-right: 1px solid var(--border);
 `
 
 export const FirstDivision = styled.div`

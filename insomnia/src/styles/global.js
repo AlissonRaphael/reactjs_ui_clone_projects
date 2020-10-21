@@ -13,6 +13,9 @@ export default createGlobalStyle`
     --text-color-to-light: #666;
     --hoover-color: #363734;
     --border: #474845;
+    --white-border: #d3d3d3;
+    --box: #e0e0e0;
+    --box-border: #d0d0d0;
     --success: #75ba24;
     --failed: #ec8702;
     --error: #e15251;
