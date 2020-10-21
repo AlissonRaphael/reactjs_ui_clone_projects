@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Container, FirstSection, SecondSection, Button, MoreIcon, Input } from './styles'
+import RequestConfig from '../RequestConfig'
 
 export default function RequestOptions(){
   return (
@@ -19,7 +20,7 @@ export default function RequestOptions(){
       </FirstSection>
 
       <SecondSection>
-
+        <RequestConfig/>
       </SecondSection>
     </Container>
   )
