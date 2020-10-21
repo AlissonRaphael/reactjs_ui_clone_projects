@@ -6,7 +6,7 @@ export default function RequestStatus(){
   return (
     <Container>
       <FirstSection>
-        <div>
+        <div className="boxes">
           <Box color={'var(--error)'}>Error</Box>
           <Box>0 ms</Box>
           <Box>0 B</Box>

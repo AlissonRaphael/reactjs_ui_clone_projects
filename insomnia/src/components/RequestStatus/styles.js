@@ -5,8 +5,6 @@ import { MdArrowDropDown } from 'react-icons/md'
 export const Container = styled.div`
   display: grid;
   grid-template-rows: 47px 1fr;
-
-  border-right: 1px solid var(--border);
 `
 
 export const FirstSection = styled.section`
@@ -14,22 +12,23 @@ export const FirstSection = styled.section`
   justify-content: space-between;
 
   background-color: var(--secondary-header);
-  border-bottom: 1px solid var(--border);
+  border: 1px solid var(--white-border);
+  border-left: none;
 
-  div {
+  .boxes {
     display: flex;
     padding: 10px 15px;
   }
 `
 
 export const Box = styled.div`
-  margin-right: 6px;
-  padding: 2px;
-  font-size: 13px;
-  border: 1px solid rbga(0,0,0,0.3);
+  margin-right: 14px;
+  padding: 4px 8px;
+  font-size: 14px;
+  border: 1px solid var(--box-border);
 
   color: ${(props) => props.color ? '#fff' : 'var(--text-color-to-light)' };
-  background-color: ${(props) => props.color ? props.color : 'rrbga(0,0,0,0.5)' };
+  background-color: ${(props) => props.color ? props.color : 'var(--box)' };
 `
 
 export const Button = styled.button`
