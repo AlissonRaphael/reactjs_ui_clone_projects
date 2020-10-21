@@ -1,6 +1,18 @@
 import React from 'react'
 
-import { Container, FirstSection, Button, MoreIcon, SecondSection, Input } from './styles'
+import {
+  Container,
+  FirstSection,
+  SecondSection,
+  FirstDivision,
+  SecondDivision,
+  LastDivision,
+  Button,
+  ButtonAdd,
+  MoreIcon,
+  AddIcon,
+  Input
+} from './styles'
 
 export default function ActionsList(){
   return (
@@ -14,29 +26,29 @@ export default function ActionsList(){
       </FirstSection>
 
       <SecondSection>
-        <div>
-          <Button>
-            <span>EnvironmentName</span>
+        <FirstDivision>
+          <Button className="simple">
+            <span>No Environment</span>
             <MoreIcon/>
           </Button>
 
-          <Button>
+          <Button className="simple">
             <span>Cookies</span>
           </Button>
-        </div>
+        </FirstDivision>
 
-        <div>
-          <Input/>
-          <Button>
-            <span>Cookies</span>
+        <SecondDivision>
+          <Input placeholder="Filter" />
+          <ButtonAdd>
+            <AddIcon/>
             <MoreIcon/>
-          </Button>
-        </div>
+          </ButtonAdd>
+        </SecondDivision>
 
-        <div>
+        <LastDivision>
           <div>POST</div>
           <div>Post</div>
-        </div>
+        </LastDivision>
       </SecondSection>
 
     </Container>
