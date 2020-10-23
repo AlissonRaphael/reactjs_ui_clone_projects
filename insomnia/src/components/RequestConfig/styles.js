@@ -74,3 +74,10 @@ export const MoreIcon = styled(MdArrowDropDown)`
   width: 20px;
   height: 20px;
 `
+
+export const Content = styled.div`
+  max-height: calc(100vh - 39px -45px);
+  width: 100%;
+  overflow-y: scroll;
+
+`

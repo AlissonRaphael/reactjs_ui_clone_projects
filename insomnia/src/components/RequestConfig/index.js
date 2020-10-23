@@ -1,7 +1,7 @@
 import React from 'react'
 import { NavLink, BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import { Menu, MoreIcon } from './styles'
+import { Menu, MoreIcon, Content } from './styles'
 import Body from '../../pages/Body'
 import Auth from '../../pages/Auth'
 import Query from '../../pages/Query'
@@ -35,13 +35,15 @@ export default function RequestConfig(){
         </NavLink>
       </Menu>
 
-      <Routes>
-        <Route path='/body' element={<Body/>}/>
-        <Route path='/auth' element={<Auth/>}/>
-        <Route path='/query' element={<Query/>}/>
-        <Route path='/header' element={<Header/>}/>
-        <Route path='/docs' element={<Docs/>}/>
-      </Routes>
+      <Content>
+        <Routes>
+          <Route path='/body' element={<Body/>}/>
+          <Route path='/auth' element={<Auth/>}/>
+          <Route path='/query' element={<Query/>}/>
+          <Route path='/header' element={<Header/>}/>
+          <Route path='/docs' element={<Docs/>}/>
+        </Routes>
+      </Content>
     </BrowserRouter>
   )
 }

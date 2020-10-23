@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function Auth(){
+import { Container, LockOpen } from './styles'
+
+export default function Body(){
   return (
-    <div>Auth</div>
+    <Container>
+      <LockOpen/>
+      <p>Select an auth type from above</p>
+    </Container>
   )
 }
