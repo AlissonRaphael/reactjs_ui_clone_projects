@@ -1,12 +1,16 @@
 import styled from 'styled-components'
 import { MdArrowDropDown } from 'react-icons/md'
 
+export const Container = styled.div`
+  display:flex;
+  flex-direction: column;
+`
 
 export const Menu = styled.div`
   display: flex;
   width: 100%;
   position: relative;
-  
+
   &:after {
     content: '';
     width: 100%;
@@ -76,8 +80,23 @@ export const MoreIcon = styled(MdArrowDropDown)`
 `
 
 export const Content = styled.div`
-  max-height: calc(100vh - 39px -45px);
+  height: calc(100vh - 86px);
   width: 100%;
   overflow-y: scroll;
+
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--background-list);
+    border: 4px solid var(--background);
+    border-left: none;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: var(--background);
+  }
 
 `

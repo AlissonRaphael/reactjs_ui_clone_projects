@@ -45,9 +45,14 @@ export default createGlobalStyle`
     list-style: none;
   }
 
-  body {
+  #app {
     background-color: var(--background);
     font-family: Roboto, sans-serif;
+    display: flex;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-y: none;
+    overflow-x: none;
   }
 
 `

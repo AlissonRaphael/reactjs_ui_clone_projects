@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const FirstSection = styled.section`
   display: flex;
-
+  max-height: 47px;
   background-color: var(--secondary-header);
   border: 1px solid var(--white-border);
   border-left: none;

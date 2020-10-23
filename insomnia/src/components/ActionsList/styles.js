@@ -19,12 +19,14 @@ export const FirstSection = styled.div`
   display: flex;
   align-items: center;
   max-width: 100%;
+  max-height: 47px;
   color: #fff;
   border-bottom: 1px solid rgba(0,0,0,0.2);
   border-right: 1px solid var(--white-border);
 `
 
 export const SecondSection = styled.div`
+  max-height: calc(100vh - 47px);
   display: flex;
   flex-direction: column;
   border-right: 1px solid var(--border);
