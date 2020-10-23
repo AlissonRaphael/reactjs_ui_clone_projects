@@ -1,11 +1,12 @@
 import React from 'react'
 
-import { Container, LockOpen } from './styles'
+import { Container } from './styles'
+import Lock from '../../assets/auth.png'
 
-export default function Body(){
+export default function Auth(){
   return (
     <Container>
-      <LockOpen/>
+      <img src={Lock}/>
       <p>Select an auth type from above</p>
     </Container>
   )
