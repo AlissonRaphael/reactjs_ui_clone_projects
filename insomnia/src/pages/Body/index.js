@@ -1,7 +1,13 @@
 import React from 'react'
 
+import { Container } from './styles'
+import Lock from '../../assets/body.png'
+
 export default function Body(){
   return (
-    <div>Body</div>
+    <Container>
+      <img src={Lock}/>
+      <p>Select a body type from above</p>
+    </Container>
   )
 }
