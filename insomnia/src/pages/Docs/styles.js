@@ -25,6 +25,7 @@ export const Button = styled.button`
   padding: 7px 14px;
   background-color: transparent;
   color: var(--input-color);
+  transition: background-color 0.2s ease;
 
   &:hover {
     background-color: rgba(255,255,255,0.03);
