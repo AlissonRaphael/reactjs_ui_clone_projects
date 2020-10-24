@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Container, FirstSection, SecondSection, Box, Button, MoreIcon } from './styles'
+import RequestResponse from '../RequestResponse'
 
 export default function RequestStatus(){
   return (
@@ -20,7 +21,7 @@ export default function RequestStatus(){
 
 
       <SecondSection>
-        
+        <RequestResponse/>
       </SecondSection>
     </Container>
   )
