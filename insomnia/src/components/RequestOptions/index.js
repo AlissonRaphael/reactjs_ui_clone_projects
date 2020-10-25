@@ -1,9 +1,26 @@
-import React from 'react'
+import React, { useState, useContext } from 'react'
 
-import { Container, FirstSection, SecondSection, Button, MoreIcon, Input } from './styles'
+import { Container, FirstSection, SecondSection, Button, MoreIcon } from './styles'
 import RequestConfig from '../RequestConfig'
+import RequestContext from '../../RequestContext'
 
 export default function RequestOptions(){
+  const [input, setInput] = useState('')
+  const [, setPath] = useContext(RequestContext)
+  
+  function submit(){
+    setPath(input)
+  }
+
+  function handleKeyUp(event){
+    const key = event.which || event.keyCode
+    if(key === 13) submit()
+  }
+
+  function handleChange(event){
+    setInput(event.target.value)
+  }
+
   return (
     <Container>
       <FirstSection>
@@ -12,9 +29,14 @@ export default function RequestOptions(){
           <MoreIcon/>
         </Button>
 
-        <Input/>
+        <input
+          type="text"
+          value={input}
+          onChange={(event) => handleChange(event)}
+          onKeyUp={(event) => handleKeyUp(event)}
+        />
 
-        <Button>
+        <Button onClick={() => submit()}>
           <span>Send</span>
         </Button>
       </FirstSection>
