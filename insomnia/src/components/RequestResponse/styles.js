@@ -81,8 +81,9 @@ export const MoreIcon = styled(MdArrowDropDown)`
 
 export const Content = styled.div`
   height: calc(100vh - 86px);
-  width: 100%;
+  max-width: 100%;
   overflow-y: scroll;
+  overflow-x: hidden !important;
 
   ::-webkit-scrollbar {
     width: 12px;
