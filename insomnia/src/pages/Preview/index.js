@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import ReactJson from 'react-json-view'
 
 import RequestContext from '../../RequestContext'
@@ -30,7 +30,7 @@ function sizeObject(object){
 export default function Preview(){
   const [state, setState] = useContext(RequestContext)
 
-  useMemo(() => {
+  useEffect(() => {
     async function getFile(){
       const start = 'start'
       const end = 'end'
@@ -57,14 +57,14 @@ export default function Preview(){
           status: response.status,
           statusText: response.statusText,
           size: sizeObject(file),
-          time: `${duration.toFixed(0)} ms`
+          time: `${duration.toFixed(0)} ms`,
+          loading: false
         })
         console.log(state)
       }
-
     }
 
-    if(state.path != '') getFile()
+    getFile()
   }, [state.path])
 
   return (
