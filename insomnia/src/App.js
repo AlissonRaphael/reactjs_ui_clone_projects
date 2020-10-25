@@ -6,10 +6,10 @@ import GlobalStyle from './styles/global'
 import Layout from './components/Layout'
 
 export default function App(){
-  const [path, setPath] = useState('')
+  const [state, setState] = useState('')
 
   return (
-    <RequestContext.Provider value={[path, setPath]}>
+    <RequestContext.Provider value={[state, setState]}>
       <GlobalStyle/>
       <Layout/>
     </RequestContext.Provider>
