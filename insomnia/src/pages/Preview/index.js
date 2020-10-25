@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react'
+import ReactJson from 'react-json-view'
 
 import RequestContext from '../../RequestContext'
 
@@ -10,8 +11,8 @@ export default function Preview(){
 
   useEffect(() => {
     async function getFile(){
-      const response = await fetch(path);
-      const json = await response.json();
+      const response = await fetch('https://api.github.com/')
+      const json = await response.json()
 
       setFile(json)
     }
@@ -20,10 +21,20 @@ export default function Preview(){
   }, [path])
 
 
-
   return (
     <Container>
-      { JSON.stringify(file, null, 2) }
+      <ReactJson
+        src={file}
+        enableClipboard={false}
+        onEdit={false}
+        onAdd={false}
+        onDelete={false}
+        collapseStringsAfterLength={20}
+        theme="monokai"
+        style={{
+          backgroundColor: 'transparent'
+        }}
+      />
     </Container>
   )
 }
