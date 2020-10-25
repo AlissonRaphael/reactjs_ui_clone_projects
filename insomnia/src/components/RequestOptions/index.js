@@ -9,7 +9,7 @@ export default function RequestOptions(){
   const [state, setState] = useContext(RequestContext)
   
   function submit(){
-    setState({ ...state, path: input })
+    setState({ ...state, path: input, loading: true })
   }
 
   function handleKeyUp(event){
