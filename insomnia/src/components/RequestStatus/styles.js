@@ -27,8 +27,13 @@ export const Box = styled.div`
   font-size: 14px;
   border: 1px solid var(--box-border);
 
-  color: ${(props) => props.color ? '#fff' : 'var(--text-color-to-light)' };
-  background-color: ${(props) => props.color ? props.color : 'var(--box)' };
+  color: ${(props) => props.status ? '#fff' : 'var(--text-color-to-light)' };
+  background-color: ${(props) => {
+    if(!props.status) return 'var(--box)'
+    if(props.status === 'OK') return 'var(--success)'
+    if(props.status === 'FAILED') return 'var(--failed)'
+    if(props.status === 'Not Found') return 'var(--error)'
+  }};
 `
 
 export const Button = styled.button`
