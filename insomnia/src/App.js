@@ -8,7 +8,6 @@ import Layout from './components/Layout'
 export default function App(){
   const [path, setPath] = useState('')
 
-
   return (
     <RequestContext.Provider value={[path, setPath]}>
       <GlobalStyle/>
