@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import RequestContext from '../../RequestContext'
 
-import { Container, FirstSection, SecondSection, Box, Button, MoreIcon } from './styles'
+import { Container, FirstSection, Modal, Spinner, AbortButton, SecondSection, Box, Button, MoreIcon } from './styles'
 import RequestResponse from '../RequestResponse'
 
 export default function RequestStatus(){
@@ -9,8 +9,17 @@ export default function RequestStatus(){
 
   return (
     <Container>
+      {state.loading &&
+        <Modal>
+          Loading
+          <Spinner/>
+          <AbortButton>Cancel</AbortButton>
+        </Modal>
+      
+      }
+
       <FirstSection>
-        { state.file &&
+        { state.file && 
           <>
             <div className="boxes">
               <Box status={state.statusText}>{state.status} {state.statusText}</Box>
@@ -26,10 +35,10 @@ export default function RequestStatus(){
         }
       </FirstSection>
 
-
       <SecondSection>
         <RequestResponse/>
       </SecondSection>
+
     </Container>
   )
 }
