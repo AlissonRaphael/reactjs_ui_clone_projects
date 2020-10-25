@@ -6,10 +6,10 @@ import RequestContext from '../../RequestContext'
 
 export default function RequestOptions(){
   const [input, setInput] = useState('')
-  const [, setPath] = useContext(RequestContext)
+  const [state, setState] = useContext(RequestContext)
   
   function submit(){
-    setPath(input)
+    setState({ ...state, path: input })
   }
 
   function handleKeyUp(event){
