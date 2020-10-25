@@ -13,6 +13,13 @@ export const FirstSection = styled.section`
   background-color: var(--secondary-header);
   border: 1px solid var(--white-border);
   border-left: none;
+
+  input {
+    color: var(--text-color-to-light);
+    background-color: transparent;
+    border: none;
+    width: 100%;
+  }
 `
 
 export const Button = styled.button`
@@ -38,14 +45,6 @@ export const MoreIcon = styled(MdArrowDropDown)`
   width: 20px;
   height: 20px;
 `
-
-export const Input = styled.input`
-  color: var(--text-color-to-light);
-  background-color: transparent;
-  border: none;
-  width: 100%;
-`
-
 
 export const SecondSection = styled.section`
   border-right: 1px solid var(--border);
