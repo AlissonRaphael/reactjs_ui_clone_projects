@@ -88,6 +88,10 @@ export const Button = styled.button`
   }
 `
 
+export const ButtonRef = styled.div`
+  position: relative;
+`
+
 export const ButtonAdd = styled.div`
   width: 100%;
   display: flex;
