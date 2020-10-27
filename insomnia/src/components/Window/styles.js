@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   z-index: 3;
-  background-color: var(--box);
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   border-radius: 5px;
@@ -12,44 +12,58 @@ export const Container = styled.div`
   left: 0;
 
   p {
-    min-width: 100%;
-    padding: 14px;
+    width: 100%;
+    padding: 8px 14px;
     text-transform: uppercase;
     font-size: 10px;
     color: var(--input-color);
-    position: absolute;
+    display: flex;
+    align-items: center;
 
-    &::before {
+    &::after {
       content: '';
+      flex: 1;
       height: 1px;
+      margin-left: 10px;
       width: 100%;
       background-color: var(--input-color);
-      position: relative;
-      top: 0;
-      left: 0;
     }
   }
 
   button {
     border: none;
-    padding: 12px;
-    display: grid;
-    grid-template-columns: 15% 60% 35%;
+    padding: 10px;
+    display: flex;
+    grid-template-columns: 15% 85%;
     align-items: center;
+    background-color: transparent;
 
-    span {
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    div {
+      margin-left: 6px;
       color: var(--text-color-to-dark);
       white-space: nowrap;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      span {
+        margin-left: 12px;
+        color: var(--input-color);
+      }
     }
 
-    span:nth-child(3){
-      margin-left: 10px;
-      color: var(--input-color);
+    &:hover {
+      background-color: rgba(0,0,0,0.05);
     }
 
-    &.hover {
-      background-color: rgba(0,0,0,0.2);
+    &:last-child {
+      border-end-end-radius: 5px;
     }
   }
-
 `
