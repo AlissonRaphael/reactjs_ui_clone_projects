@@ -1,15 +1,26 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Overlay = styled.div`
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+`
+
+export const Modal = styled.div`
   z-index: 3;
+  padding: 6px 0px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  border-radius: 5px;
+  border-radius: 4px;
 
   position: absolute;
-  top: ${(props) => props.distance ? props.distance : 0 };
-  left: 0;
+  top: ${(props) => props.top ? props.top : 0 }px;
+  left: ${(props) => props.left ? props.left : 0 }px;
 
   p {
     width: 100%;
@@ -31,20 +42,20 @@ export const Container = styled.div`
   }
 
   button {
+    width: 100%;
     border: none;
-    padding: 10px;
+    padding: 8px 14px;
     display: flex;
-    grid-template-columns: 15% 85%;
     align-items: center;
     background-color: transparent;
 
     svg {
-      width: 100%;
-      height: 100%;
+      width: 12px;
+      height: 12px;
     }
 
     div {
-      margin-left: 6px;
+      margin-left: 14px;
       color: var(--text-color-to-dark);
       white-space: nowrap;
 
@@ -53,17 +64,13 @@ export const Container = styled.div`
       justify-content: space-between;
 
       span {
-        margin-left: 12px;
+        margin-left: 30px;
         color: var(--input-color);
       }
     }
 
     &:hover {
       background-color: rgba(0,0,0,0.05);
-    }
-
-    &:last-child {
-      border-end-end-radius: 5px;
     }
   }
 `

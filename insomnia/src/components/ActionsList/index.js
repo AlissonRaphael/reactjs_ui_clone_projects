@@ -11,7 +11,6 @@ import {
   SecondDivision,
   LastDivision,
   Button,
-  ButtonRef,
   ButtonAdd,
   MoreIcon,
   AddIcon,
@@ -33,17 +32,18 @@ export default function ActionsList(){
 
       <SecondSection>
         <FirstDivision>
-          <ButtonRef>
-            <Button className="simple" onClick={() => setEnvironment(true)}>
-              <span>No Environment</span>
-              <MoreIcon/>
-            </Button>
-            {true && 
-              <Window heightButton="24px">
+          <Button className="simple" onClick={() => setEnvironment(true)}>
+            <span>No Environment</span>
+            <MoreIcon/>
+          </Button>
+
+          {environment && 
+            <Window xyDistance={[76, 6]} clickOut={() => setEnvironment(false)}>
+              <div>
                 <p>Activate Environment</p>
                 <button>
                   <svg></svg>
-                  <div>No Environment</div>                  
+                  <div>No Environment</div>
                 </button>
 
                 <p>General</p>
@@ -55,11 +55,9 @@ export default function ActionsList(){
                     <span>Ctrl+E</span>
                   </div>
                 </button>
-
-              </Window>
-            }
-          </ButtonRef>
-
+              </div>
+            </Window>
+          }
 
           <Button className="simple">
             <span>Cookies</span>

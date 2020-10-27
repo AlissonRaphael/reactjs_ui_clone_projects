@@ -1,11 +1,13 @@
 import React from 'react'
 
-import { Container } from './styles'
+import { Overlay, Modal } from './styles'
 
-export default function Window({children, heightButton}){
+export default function Window({children, xyDistance, clickOut}){
   return (
-    <Container distance={heightButton}>
-      {children}
-    </Container>
+    <Overlay onClick={clickOut}>
+      <Modal top={xyDistance[0]} left={xyDistance[1]} >
+        {children}
+      </Modal>
+    </Overlay>
   )
 }
