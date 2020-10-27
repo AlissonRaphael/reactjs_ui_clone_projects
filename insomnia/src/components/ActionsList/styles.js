@@ -42,6 +42,8 @@ export const SecondDivision = styled.div`
   padding: 6px 6px 0 6px;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `
 
 export const LastDivision = styled.div`
@@ -88,13 +90,20 @@ export const Button = styled.button`
   }
 `
 
+export const RefButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+`
+
 export const ButtonAdd = styled.div`
+  padding: 4px 10px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
-  cursor: pointer;
   border-radius: 4px;
   margin-left: 4px;
 
@@ -115,6 +124,7 @@ export const AddIcon = styled(MdAddCircle)`
 `
 
 export const Input = styled.input`
+  width: 1005;
   background-color: transparent;
   padding: 6px 4px;
   border: 1px solid var(--border);
