@@ -2,12 +2,14 @@ import React from 'react'
 
 import { Overlay, Modal } from './styles'
 
-export default function Window({children, xyDistance, clickOut}){
+export default function Window({children, distance, clickOut}){
   return (
-    <Overlay onClick={clickOut}>
-      <Modal top={xyDistance[0]} left={xyDistance[1]} >
+    <>
+      <Overlay onClick={clickOut}>
+      </Overlay>
+      <Modal distance={distance}>
         {children}
       </Modal>
-    </Overlay>
+    </>
   )
 }

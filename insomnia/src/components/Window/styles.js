@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 
 export const Overlay = styled.div`
-  z-index: 2;
+  z-index: 4;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: transparent;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
 `
 
 export const Modal = styled.div`
-  z-index: 3;
+  z-index: 5;
   padding: 6px 0px;
   background-color: #fff;
   display: flex;
@@ -19,8 +19,8 @@ export const Modal = styled.div`
   border-radius: 4px;
 
   position: absolute;
-  top: ${(props) => props.top ? props.top : 0 }px;
-  left: ${(props) => props.left ? props.left : 0 }px;
+  top: ${(props) => props.distance ? props.distance : 0 }px;
+  left: 0;
 
   p {
     width: 100%;
@@ -55,17 +55,18 @@ export const Modal = styled.div`
     }
 
     div {
+      width: 100%;
       margin-left: 14px;
       color: var(--text-color-to-dark);
       white-space: nowrap;
-
-      display: flex;
-      align-items: center;
+      display: inline-flex;
       justify-content: space-between;
 
       span {
+        width: 100%;
         margin-left: 30px;
         color: var(--input-color);
+        text-align: right;
       }
     }
 
