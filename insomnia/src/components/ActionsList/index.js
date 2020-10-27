@@ -42,15 +42,18 @@ export default function ActionsList(){
               <Window heightButton="24px">
                 <p>Activate Environment</p>
                 <button>
-                  <span></span>
-                  <span>No Environment</span>
-                  <span></span>
+                  <svg></svg>
+                  <div>No Environment</div>                  
                 </button>
+
                 <p>General</p>
+
                 <button>
                   <FaWrench size={12}/>
-                  <span>Manage Environments</span>
-                  <span>Ctrl+E</span>
+                  <div>
+                    Manage Environments
+                    <span>Ctrl+E</span>
+                  </div>
                 </button>
 
               </Window>
