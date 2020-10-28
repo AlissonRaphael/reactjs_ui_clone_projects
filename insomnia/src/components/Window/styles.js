@@ -31,6 +31,12 @@ export const Modal = styled.div`
     display: flex;
     align-items: center;
 
+    svg {
+      margin-right: 5px;
+      width: 13px;
+      height: 13px;
+    }
+
     &::after {
       content: '';
       flex: 1;
