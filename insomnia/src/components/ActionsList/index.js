@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import { FaWrench, FaPlusCircle, FaFolder } from 'react-icons/fa'
+import { FaWrench, FaPlusCircle, FaFolder, FaGlobeAsia, FaUsers } from 'react-icons/fa'
+import { TiArrowForward } from 'react-icons/ti'
+import { MdSettings } from 'react-icons/md'
+import { FiLogIn } from 'react-icons/fi'
 
 import Window from '../Window'
 
@@ -21,15 +24,86 @@ import {
 export default function ActionsList(){
   const [environment, setEnvironment] = useState(false)
   const [create, setCreate] = useState(false)
+  const [workspace, setWorkspace] = useState(false)
 
   return (
     <Container>
 
       <FirstSection>
-        <Button>
-          <span>Test</span>
-          <MoreIcon/>
-        </Button>
+        <RefButton>
+          <Button onClick={() => setWorkspace(true)}>
+            <span>Test</span>
+            <MoreIcon/>
+          </Button>
+
+          {workspace && 
+            <Window distance={39} isMenu clickOut={() => setWorkspace(false)}>
+              <div>
+                <p>Test</p>
+
+                <button>
+                  <FaWrench />
+                  <div>
+                    Workspace Settings
+                    <span>Shift+Ctrl+,</span>
+                  </div>
+                </button>
+
+                <button>
+                  <FaGlobeAsia/>
+                  <div>
+                    Share Test
+                    <span></span>
+                  </div>
+                </button>
+
+                <p>Switch Workspace</p>
+
+                <button>
+                  <svg></svg>
+                  <div>
+                    Create Workspace
+                    <span></span>
+                  </div>
+                </button>
+
+                <p>Insomnia v{new Date(Date.now()).getFullYear()}</p>
+
+                <button>
+                  <MdSettings/>
+                  <div>
+                    Preferences 
+                    <span>Ctrl+,</span>
+                  </div>
+                </button>
+
+                <button>
+                  <TiArrowForward/>
+                  <div>
+                    Import/Export
+                    <span></span>
+                  </div>
+                </button>
+
+                <button>
+                  <FiLogIn/>
+                  <div>
+                    Login
+                    <span></span>
+                  </div>
+                </button>
+
+                <button>
+                  <FaUsers/>
+                  <div>
+                    Upgrade to Plus
+                    <span></span>
+                  </div>
+                </button>
+              </div>
+            </Window>
+          }
+        </RefButton>
       </FirstSection>
 
       <SecondSection>
