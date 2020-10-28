@@ -74,6 +74,10 @@ export const Menu = styled.div`
   }
 `
 
+export const RefButton = styled.div`
+  position: relative;
+`
+
 export const MoreIcon = styled(MdArrowDropDown)`
   width: 20px;
   height: 20px;
