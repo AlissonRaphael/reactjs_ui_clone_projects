@@ -13,6 +13,7 @@ export const Overlay = styled.div`
 export const Modal = styled.div`
   z-index: 5;
   padding: 6px 0px;
+  min-width: 210px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
