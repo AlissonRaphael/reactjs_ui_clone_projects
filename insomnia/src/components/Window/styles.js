@@ -17,10 +17,9 @@ export const Modal = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 4px;
-
   position: absolute;
-  top: ${(props) => props.distance ? props.distance : 0 }px;
-  left: ${(props) => props.isMenu ? 200 : 0 }px;
+  top: ${(props) => props.y ? props.y : 0 }px;
+  left: ${(props) => props.x ? props.x : 0 }px;
 
   p {
     width: 100%;
