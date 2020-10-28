@@ -20,7 +20,7 @@ export const Modal = styled.div`
 
   position: absolute;
   top: ${(props) => props.distance ? props.distance : 0 }px;
-  left: 0;
+  left: ${(props) => props.isMenu ? 200 : 0 }px;
 
   p {
     width: 100%;
@@ -50,13 +50,19 @@ export const Modal = styled.div`
     background-color: transparent;
 
     svg {
+      margin-left: 10px;
       width: 12px;
       height: 12px;
+
+      path {
+        height: 100%;
+        width: 100%;
+      }
     }
 
     div {
       width: 100%;
-      margin-left: 14px;
+      margin-left: 10px;
       color: var(--text-color-to-dark);
       white-space: nowrap;
       display: inline-flex;
