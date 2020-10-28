@@ -37,7 +37,7 @@ export default function ActionsList(){
           </Button>
 
           {workspace && 
-            <Window distance={39} isMenu clickOut={() => setWorkspace(false)}>
+            <Window y={39} x={200} clickOut={() => setWorkspace(false)}>
               <div>
                 <p>Test</p>
 
@@ -115,7 +115,7 @@ export default function ActionsList(){
             </Button>
 
           {environment && 
-            <Window distance={24} clickOut={() => setEnvironment(false)}>
+            <Window y={24} clickOut={() => setEnvironment(false)}>
               <div>
                 <p>Activate Environment</p>
                 <button>
@@ -151,7 +151,7 @@ export default function ActionsList(){
             </ButtonAdd>
 
             {create && 
-            <Window distance={28} clickOut={() => setCreate(false)}>
+            <Window y={28} clickOut={() => setCreate(false)}>
               <div>
                 <button>
                   <FaPlusCircle size={12}/>

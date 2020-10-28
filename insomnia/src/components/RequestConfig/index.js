@@ -13,19 +13,25 @@ import Docs from '../../pages/Docs'
 
 export default function RequestConfig(){
   const [bodyOptions, setBodyOptions] = useState(false)
+  // const [authOptions, setAuthOptions] = useState(false)
+
+  function menu(){
+    if(location.pathname.includes('body')) setBodyOptions(true)
+    // if(location.pathname.includes('auth')) setAuthOptions(true)
+  }
 
   return (
     <Container>
       <BrowserRouter>
         <Menu>
           <RefButton>
-            <NavLink to="/body" onChange={() => menu()}>
+            <NavLink to="/body" onClick={() => menu()}>
               Body
               <MoreIcon/>
             </NavLink>
 
             {bodyOptions && 
-              <Window distance={30} is Menu clickOut={() => setBodyOptions(false)}>
+              <Window y={40} x={40} clickOut={() => setBodyOptions(false)}>
                 <div>
                   <p><MdMenu/>Structured</p>
                   <button>
@@ -70,7 +76,7 @@ export default function RequestConfig(){
                     <div>Other</div>
                   </button>
 
-                  <p><MdMoreHoriz/>Text</p>
+                  <p><MdMoreHoriz/>Other</p>
 
                   <button>
                     <svg></svg>
@@ -86,10 +92,12 @@ export default function RequestConfig(){
             }
           </RefButton>
 
-          <NavLink to="/auth">
-            Auth
-            <MoreIcon/>
-          </NavLink>
+          <RefButton>
+            <NavLink to="/auth">
+              Auth
+              <MoreIcon/>
+            </NavLink>
+          </RefButton>
 
           <NavLink to="/query">
             Query
