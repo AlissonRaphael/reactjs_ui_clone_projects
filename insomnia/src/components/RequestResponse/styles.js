@@ -54,10 +54,7 @@ export const Menu = styled.div`
         right: 0;
         z-index: 2;
       }
-    }
 
-    &.active:not(:first-child) {
-      position: relative;
       &::before {
         content: '';
         width: 1px;
@@ -68,10 +65,21 @@ export const Menu = styled.div`
         left: 0;
         z-index: 2;
       }
-
     }
-
   }
+
+  div:first-child a.active {
+    position: relative;
+      &::before {
+        content: '';
+        width: 0;
+        height: 0;
+      }
+  }
+`
+
+export const RefButton = styled.div`
+  position: relative;
 `
 
 export const MoreIcon = styled(MdArrowDropDown)`
