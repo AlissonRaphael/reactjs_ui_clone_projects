@@ -175,8 +175,8 @@ export default function ActionsList(){
         </SecondDivision>
 
         <LastDivision>
-          <div>POST</div>
-          <div>Post</div>
+          <div></div>
+          <div></div>
         </LastDivision>
       </SecondSection>
 
