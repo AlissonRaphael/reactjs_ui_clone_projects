@@ -69,7 +69,6 @@ export default function RequestResponse(){
 
           <NavLink to="/headerstatus">
             Header
-            <MoreIcon/>
           </NavLink>
 
           <NavLink to="/cookies">
