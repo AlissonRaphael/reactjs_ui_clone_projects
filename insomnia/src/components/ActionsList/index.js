@@ -27,159 +27,164 @@ export default function ActionsList(){
   const [workspace, setWorkspace] = useState(false)
 
   return (
-    <Container>
-
-      <FirstSection>
-        <RefButton>
-          <Button onClick={() => setWorkspace(true)}>
-            <span>Test</span>
-            <MoreIcon/>
-          </Button>
-
-          {workspace && 
-            <Window y={39} x={200} clickOut={() => setWorkspace(false)}>
-              <div>
-                <p>Test</p>
-
-                <button>
-                  <FaWrench />
-                  <div>
-                    Workspace Settings
-                    <span>Shift+Ctrl+,</span>
-                  </div>
-                </button>
-
-                <button>
-                  <FaGlobeAsia/>
-                  <div>
-                    Share Test
-                    <span></span>
-                  </div>
-                </button>
-
-                <p>Switch Workspace</p>
-
-                <button>
-                  <svg></svg>
-                  <div>
-                    Create Workspace
-                    <span></span>
-                  </div>
-                </button>
-
-                <p>Insomnia v{new Date(Date.now()).getFullYear()}</p>
-
-                <button>
-                  <MdSettings/>
-                  <div>
-                    Preferences 
-                    <span>Ctrl+,</span>
-                  </div>
-                </button>
-
-                <button>
-                  <TiArrowForward/>
-                  <div>
-                    Import/Export
-                    <span></span>
-                  </div>
-                </button>
-
-                <button>
-                  <FiLogIn/>
-                  <div>
-                    Login
-                    <span></span>
-                  </div>
-                </button>
-
-                <button>
-                  <FaUsers/>
-                  <div>
-                    Upgrade to Plus
-                    <span></span>
-                  </div>
-                </button>
-              </div>
-            </Window>
-          }
-        </RefButton>
-      </FirstSection>
-
-      <SecondSection>
-        <FirstDivision>
+    <Container
+      width={300}
+      height={Infinity}
+      minConstraints={[200, Infinity]}
+      maxConstraints={[600, Infinity]}
+    >
+      <>
+        <FirstSection>
           <RefButton>
-            <Button className="simple" onClick={() => setEnvironment(true)}>
-              <span>No Environment</span>
+            <Button onClick={() => setWorkspace(true)}>
+              <span>Test</span>
               <MoreIcon/>
             </Button>
 
-          {environment && 
-            <Window y={24} clickOut={() => setEnvironment(false)}>
-              <div>
-                <p>Activate Environment</p>
-                <button>
-                  <svg></svg>
-                  <div>No Environment</div>
-                </button>
+            {workspace && 
+              <Window y={39} x={200} clickOut={() => setWorkspace(false)}>
+                <div>
+                  <p>Test</p>
 
-                <p>General</p>
+                  <button>
+                    <FaWrench />
+                    <div>
+                      Workspace Settings
+                      <span>Shift+Ctrl+,</span>
+                    </div>
+                  </button>
 
-                <button>
-                  <FaWrench size={12}/>
-                  <div>
-                    Manage Environments
-                    <span>Ctrl+E</span>
-                  </div>
-                </button>
-              </div>
-            </Window>
-          }
+                  <button>
+                    <FaGlobeAsia/>
+                    <div>
+                      Share Test
+                      <span></span>
+                    </div>
+                  </button>
+
+                  <p>Switch Workspace</p>
+
+                  <button>
+                    <svg></svg>
+                    <div>
+                      Create Workspace
+                      <span></span>
+                    </div>
+                  </button>
+
+                  <p>Insomnia v{new Date(Date.now()).getFullYear()}</p>
+
+                  <button>
+                    <MdSettings/>
+                    <div>
+                      Preferences 
+                      <span>Ctrl+,</span>
+                    </div>
+                  </button>
+
+                  <button>
+                    <TiArrowForward/>
+                    <div>
+                      Import/Export
+                      <span></span>
+                    </div>
+                  </button>
+
+                  <button>
+                    <FiLogIn/>
+                    <div>
+                      Login
+                      <span></span>
+                    </div>
+                  </button>
+
+                  <button>
+                    <FaUsers/>
+                    <div>
+                      Upgrade to Plus
+                      <span></span>
+                    </div>
+                  </button>
+                </div>
+              </Window>
+            }
           </RefButton>
+        </FirstSection>
 
-          <Button className="simple">
-            <span>Cookies</span>
-          </Button>
-        </FirstDivision>
+        <SecondSection>
+          <FirstDivision>
+            <RefButton>
+              <Button className="simple" onClick={() => setEnvironment(true)}>
+                <span>No Environment</span>
+                <MoreIcon/>
+              </Button>
 
-        <SecondDivision>
-          <Input placeholder="Filter" />
-          <RefButton>
-            <ButtonAdd onClick={() => setCreate(true)}>
-              <AddIcon/>
-              <MoreIcon/>
-            </ButtonAdd>
+            {environment && 
+              <Window y={24} clickOut={() => setEnvironment(false)}>
+                <div>
+                  <p>Activate Environment</p>
+                  <button>
+                    <svg></svg>
+                    <div>No Environment</div>
+                  </button>
 
-            {create && 
-            <Window y={28} clickOut={() => setCreate(false)}>
-              <div>
-                <button>
-                  <FaPlusCircle size={12}/>
-                  <div>
-                    New Request
-                    <span>Ctrl+N</span>
-                  </div>
-                </button>
+                  <p>General</p>
 
-                <button>
-                  <FaFolder size={12}/>
-                  <div>
-                    New Folder
-                    <span>Shift+Ctrl+N</span>
-                  </div>
-                </button>
-              </div>
-            </Window>
-          }
-          </RefButton>
-        </SecondDivision>
+                  <button>
+                    <FaWrench size={12}/>
+                    <div>
+                      Manage Environments
+                      <span>Ctrl+E</span>
+                    </div>
+                  </button>
+                </div>
+              </Window>
+            }
+            </RefButton>
 
-        <LastDivision>
-          <div></div>
-          <div></div>
-        </LastDivision>
-      </SecondSection>
+            <Button className="simple">
+              <span>Cookies</span>
+            </Button>
+          </FirstDivision>
 
+          <SecondDivision>
+            <Input placeholder="Filter" />
+            <RefButton>
+              <ButtonAdd onClick={() => setCreate(true)}>
+                <AddIcon/>
+                <MoreIcon/>
+              </ButtonAdd>
+
+              {create && 
+              <Window y={28} clickOut={() => setCreate(false)}>
+                <div>
+                  <button>
+                    <FaPlusCircle size={12}/>
+                    <div>
+                      New Request
+                      <span>Ctrl+N</span>
+                    </div>
+                  </button>
+
+                  <button>
+                    <FaFolder size={12}/>
+                    <div>
+                      New Folder
+                      <span>Shift+Ctrl+N</span>
+                    </div>
+                  </button>
+                </div>
+              </Window>
+            }
+            </RefButton>
+          </SecondDivision>
+
+          <LastDivision>
+            <div></div>
+            <div></div>
+          </LastDivision>
+        </SecondSection>
+      </>
     </Container>
   )
 }
