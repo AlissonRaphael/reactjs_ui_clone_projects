@@ -1,12 +1,7 @@
 import styled from 'styled-components'
-import { ResizableBox } from 'react-resizable'
 import { MdArrowDropDown, MdAddCircle } from 'react-icons/md'
 
-export const Container = styled(ResizableBox).attrs({
-  resizeHandles: ['e'],
-  axis: 'x'
-})`
-  flex: 1;
+export const Container = styled.div`
   max-height: 100%;
 
   display: grid;
