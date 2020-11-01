@@ -1,7 +1,16 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  flex: 1;
   display: grid;
-  grid-template-columns: 50% 50%;
+`
+
+export const EwResize = styled.div`
+  z-index: 6;
+  position: absolute;
+  top: 0px;
+  
+  height: 100%;
+  width: 5px;
+  cursor: ew-resize;
+  background-color: black;
 `
