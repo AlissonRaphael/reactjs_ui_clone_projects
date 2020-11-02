@@ -1,8 +1,13 @@
 import styled from 'styled-components'
+import { ResizableBox } from 'react-resizable'
 import { MdArrowDropDown } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 
-export const Container = styled.div`
+export const Container = styled(ResizableBox).attrs({
+  resizeHandles: ['e'],
+  axis: 'x'
+})`
+
   display: grid;
   grid-template-rows: 47px 1fr;
 `
