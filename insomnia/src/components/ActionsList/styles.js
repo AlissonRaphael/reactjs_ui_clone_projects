@@ -1,13 +1,17 @@
 import styled from 'styled-components'
+import { ResizableBox } from 'react-resizable'
 import { MdArrowDropDown, MdAddCircle } from 'react-icons/md'
 
-export const Container = styled.div`
-  max-height: 100%;
+export const Container = styled(ResizableBox).attrs({
+  resizeHandles: ['e'],
+  axis: 'x'
+})`
 
   display: grid;
   grid-template-rows: 47px 1fr;
 
   background-color: var(--background-list);
+
 `
 
 export const FirstSection = styled.div`
@@ -98,6 +102,7 @@ export const RefButton = styled.div`
 `
 
 export const ButtonAdd = styled.div`
+  flex-grow: 1;
   padding: 4px 10px;
   width: 100%;
   display: flex;
@@ -124,7 +129,7 @@ export const AddIcon = styled(MdAddCircle)`
 `
 
 export const Input = styled.input`
-  width: 1005;
+  flex-grow: 5;
   background-color: transparent;
   padding: 6px 4px;
   border: 1px solid var(--border);
