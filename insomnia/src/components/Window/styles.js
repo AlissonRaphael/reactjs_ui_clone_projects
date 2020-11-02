@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Overlay = styled.div`
-  z-index: 4;
+  z-index: 9;
   width: 100%;
   height: 100%;
   background-color: transparent;
@@ -11,7 +11,7 @@ export const Overlay = styled.div`
 `
 
 export const Modal = styled.div`
-  z-index: 5;
+  z-index: 10;
   padding: 6px 0px;
   min-width: 210px;
   background-color: #fff;
