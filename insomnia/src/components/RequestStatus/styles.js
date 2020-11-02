@@ -3,9 +3,10 @@ import { MdArrowDropDown } from 'react-icons/md'
 import { BsArrowRepeat } from 'react-icons/bs'
 
 export const Container = styled.div`
+  flex: 1;
+
   display: grid;
   grid-template-rows: 47px 1fr;
-  position: relative;
 `
 
 export const FirstSection = styled.section`
