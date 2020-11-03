@@ -61,4 +61,17 @@ export default createGlobalStyle`
     -ms-user-select: none;
   }
 
+  .react-resizable {
+    position: relative;
+  }
+
+  .react-resizable-handle-e {
+    z-index: 3;
+    position: absolute;
+    height: 100%;
+    width: 3px;
+    right: 0px;
+    top: 0px;
+    cursor: ew-resize;
+  }
 `
