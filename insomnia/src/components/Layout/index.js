@@ -1,41 +1,23 @@
 import React, { useState } from 'react'
 
-import { Container, EwResize } from './styles'
+import { Container } from './styles'
 
 import ActionList from '../ActionsList'
-import Requests from '../Requests'
+import RequestOptions from '../RequestOptions'
+import RequestStatus from '../RequestStatus'
 
 export default function Layout(){
-  const [position, setPosition] = useState(window.innerWidth/5)
-  const [size, setSize] = useState((window.innerWidth/5)*4)
-  const [grid, setGrid] = useState(`${position}px ${size}px`)
-
-  function resize(event){
-    window.addEventListener('mousemove', start, false)
-    window.addEventListener('mouseup', stop, false)
-
-    function start(event){
-      let positionX = Math.trunc(event.clientX)
-      if(positionX % 5 == 0 || positionX % 5 == 5){
-        setPosition(positionX)
-        setGrid(`${positionX}px ${window.innerWidth-positionX}px`)
-      }
-    }
-
-    function stop(){
-      setSize(window.innerWidth-position)
-      window.removeEventListener('mousemove', start, false)
-      window.removeEventListener('mouseup', stop, false)
-    }
-  }
+  const [positions, setPositions] = useState({
+    one: window.innerWidth/4,
+    two: (window.innerWidth/4)*1.5,
+    three: (window.innerWidth/4)*1.5,
+  })
 
   return (
-    <Container style={{ gridTemplateColumns: grid }}>
-
-      <ActionList/>
-      <EwResize style={{ left: position + 'px' }} onMouseDown={(event) => resize(event)}/>
-      <Requests size={size} newPosition={position}/>
-
+    <Container >
+      <ActionList positions={positions} />
+      <RequestOptions positions={positions} />
+      <RequestStatus positions={positions} />
     </Container>
   )
 }
