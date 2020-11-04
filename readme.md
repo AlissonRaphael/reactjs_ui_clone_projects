@@ -17,6 +17,12 @@ Discord é uma plataforma de chat em grupo construída originalmente para jogado
 
 ![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/discord/discord.gif)
 
+### Insomnia Core
+
+The Desktop API client for Rest and GraphQL. Make requests, inspect responses.
+
+![](https://raw.githubusercontent.com/AlissonRaphael/reactjs_ui_clone_projects/main/insomnia/screenshot.gif)
+
 ### Pipefy
 
 Pipefy is a no/low-code business process management platform that empowers teams to automate workflows and make processes hassle-free from request to delivery.
