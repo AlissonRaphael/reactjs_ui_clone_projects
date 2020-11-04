@@ -78,6 +78,31 @@ npm install -g yarn
 
 Clone this repo to your local machine using `https://github.com/AlissonRaphael/ui_clone_projects.git`
 
+Clone specific project:
+```sh
+# A partir da versão 2.19.
+git --version
+
+# Criar e entrar em um diretório.
+mkdir diretorio && cd diretorio
+
+# Iniciar um repositório.
+git init
+
+# Rastrear o repositório.
+git remote add -f origin https://github.com/AlissonRaphael/reactjs_ui_clone_projects
+
+# Configurar o recurso de verificação em árvore.
+git config core.sparseCheckout true
+
+# Crie um arquivo dentro do diretório oculto .git: .git/info/sparse-checkout
+# Inserir no arquivo o nome do sub-diretório que você deseja clonar.
+echo 'nome do sub-diretório' >> .git/info/sparse-checkout
+
+## Fazer o download com o pull e não com o clone
+git pull origin master
+```
+
 ## Contact
 - Github: [alissonraphael](https://gist.github.com/AlissonRaphael)
 - Twitter: [@AlissonRaphaeI](@AlissonRaphaeI)
