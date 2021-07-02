@@ -4,6 +4,13 @@
 
 This repository contains UI clones of various webapps for student purposes. Using several React ecosystem libraries, such as styled-components, react-icons, react-router.
 
+![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/react.jpg)
+![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/styled_components.jpg)
+![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/react_icons.jpg)
+![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/react_router.jpg)
+![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/framer_motion.jpg)
+
+
 ## Contents
 - [Installation](#installation)
 - [Projects](#projects)
