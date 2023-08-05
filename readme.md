@@ -5,12 +5,11 @@
 This repository contains UI clones of various webapps for student purposes. Using several React ecosystem libraries, such as styled-components, react-icons, react-router.
 
 ## Techs
-![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/.github/readme_react.jpg)
-![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/.github/readme_styled_components.jpg)
-![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/.github/readme_react_icons.jpg)
-![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/.github/readme_react_router.jpg)
-![](https://github.com/AlissonRaphael/reactjs_ui_clone_projects/blob/main/.github/readme_framer_motion.jpg)
-
+![GithubPages Badge](https://img.shields.io/badge/-React-000?style=flat-square&logo=react&logoColor=black&color=61DAFB&)
+![GithubPages Badge](https://img.shields.io/badge/-StyledComponents-000?style=flat-square&logo=styledcomponents&logoColor=white&color=DB7093)
+![GithubPages Badge](https://img.shields.io/badge/-ReactIcons-000?style=flat-square&logo=createreactapp&logoColor=white&color=09D3AC)
+![GithubPages Badge](https://img.shields.io/badge/-ReactRouter-000?style=flat-square&logo=reactrouter&logoColor=white&color=CA4245)
+![GithubPages Badge](https://img.shields.io/badge/-FramerMotion-000?style=flat-square&logo=framer&logoColor=white&color=0055FF)
 
 ## Contents
 - [Projects](#projects)
